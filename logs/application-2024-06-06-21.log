@@ -1,0 +1,8 @@
+2024-06-06 21:38:16 [[32minfo[39m]: POST /api/v1/users 500 95ms {"ip":"::1","userAgent":"PostmanRuntime/7.37.3"}
+2024-06-06 21:47:52 [[32minfo[39m]: POST /api/v1/users 500 94ms {"ip":"::1","userAgent":"PostmanRuntime/7.37.3"}
+2024-06-06 21:51:05 [[32minfo[39m]: POST /api/v1/users 500 156ms {"ip":"::1","userAgent":"PostmanRuntime/7.37.3"}
+2024-06-06 21:51:51 [[32minfo[39m]: POST /api/v1/users 500 151ms {"ip":"::1","userAgent":"PostmanRuntime/7.37.3"}
+2024-06-06 21:54:28 [[32minfo[39m]: POST /api/v1/users 500 2977ms {"ip":"::1","userAgent":"PostmanRuntime/7.37.3"}
+2024-06-06 21:55:15 [[32minfo[39m]: POST /api/v1/users 200 1254ms {"ip":"::1","userAgent":"PostmanRuntime/7.37.3"}
+2024-06-06 21:56:12 [[32minfo[39m]: POST /api/v1/users 200 484ms {"ip":"::1","userAgent":"PostmanRuntime/7.37.3"}
+2024-06-06 21:59:00 [[32minfo[39m]: POST /api/v1/users/login 200 27ms {"ip":"::1","userAgent":"PostmanRuntime/7.37.3"}

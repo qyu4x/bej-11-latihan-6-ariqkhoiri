@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\B\\CODE\\platinum\\pinstagram\\logs\\.7056f9f92c6cf11546a64adbb1dbaeac7bed6c1e-audit.json",
+    "files": [
+        {
+            "date": 1717684523709,
+            "name": "D:\\B\\CODE\\platinum\\pinstagram\\logs\\application-2024-06-06-21.log",
+            "hash": "e3b70fe9cdc4a74de91a26e15f2c8dbd6028ba3427d753408d877780248422df"
+        }
+    ],
+    "hashType": "sha256"
+}

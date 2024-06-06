@@ -4,6 +4,7 @@ const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const {errorMiddleware} = require("./middleware/error.middleware");
+const {loggerMiddleware} = require("./middleware/logger.middleware");
 const {routeNotFoundMiddleware} = require("./middleware/route-not-found.middleware");
 const {route} = require('./route/api');
 
@@ -12,6 +13,7 @@ const appName = process.env.APP_NAME || 'pinstagram';
 
 const app = express();
 app.use(express.json());
+app.use(loggerMiddleware);
 
 app.use(route)
 
