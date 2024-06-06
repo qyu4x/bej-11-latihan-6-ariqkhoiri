@@ -41,6 +41,20 @@ const logout = async (req, res, next) => {
     }
 }
 
+const update = async (req, res, next) => {
+    try {
+        const userId = req.user.id;
+        const request = req.body;
+
+        await userService.update(userId, request);
+        res.status(200).json({
+            data: "OK"
+        });
+    } catch (error) {
+        next(error);
+    }
+}
+
 const get = async (req, res, next) => {
     try {
         const userId = req.user.id;
@@ -58,5 +72,6 @@ module.exports = {
     register,
     login,
     logout,
-    get
+    get,
+    update
 }

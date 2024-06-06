@@ -107,5 +107,6 @@ module.exports = {
     register,
     login,
     get,
-    logout
+    logout,
+    update
 }
