@@ -9,7 +9,8 @@ const userRepository = require('../repository/user.repository');
 const {validate} = require('../validation/validate');
 const {
     createUserSchema,
-    loginUserSchema
+    loginUserSchema,
+    updateUserSchema
 } = require('../validation/user.validation');
 
 
@@ -74,6 +75,21 @@ const get = async (userId) => {
     }
 
     return user;
+}
+
+const update = async (userId, request) => {
+    const updateUserRequest = validate(updateUserSchema, request);
+    const user = await userRepository.findOneById(userId);
+    if (!user) {
+        throw new ResponseError(404, "User not found");
+    }
+
+    user.username = updateUserRequest.username;
+    user.biography = updateUserRequest.biography;
+    user.full_name = updateUserRequest.full_name;
+    user.gender = updateUserRequest.gender;
+    user.updated_at = Date.now();
+    user.save();
 }
 
 const logout = async (userId) => {
