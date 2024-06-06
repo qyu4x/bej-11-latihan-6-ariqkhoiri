@@ -85,6 +85,7 @@ const update = async (userId, request) => {
     }
 
     user.username = updateUserRequest.username;
+    user.image_url = updateUserRequest.image_url
     user.biography = updateUserRequest.biography;
     user.full_name = updateUserRequest.full_name;
     user.gender = updateUserRequest.gender;

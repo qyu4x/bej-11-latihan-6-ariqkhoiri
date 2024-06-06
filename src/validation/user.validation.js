@@ -10,6 +10,7 @@ const createUserSchema = Joi.object({
 
 const updateUserSchema = Joi.object({
     username: Joi.string().min(2).max(100).required(),
+    image_url: Joi.string().uri(),
     full_name: Joi.string().min(2).max(255).required(),
     gender: Joi.string().valid('MALE', 'FEMALE'),
     biography: Joi.string()
