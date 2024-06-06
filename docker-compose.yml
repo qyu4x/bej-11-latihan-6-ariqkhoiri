@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:14.11-alpine3.18
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=pinstagram
+    volumes:
+      - pinstagram-data-slaves:/var/lib/postgresql/data
+
+volumes:
+  pinstagram-data-master:
+  pinstagram-data-slaves:
